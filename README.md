@@ -4,7 +4,9 @@ This repo is the official implementation for: [PnPNet: Pull-and-Push Networks fo
 
 
 # Dataset Link
-[BraTS 2020: Multimodal Brain Tumor Segmentation Challenge 2020](https://www.med.upenn.edu/cbica/brats2020/data.html)  
+[Pulmonary Lobe Dataset from LUNA16]
+
+[COVID-19 CT Lung and Infection Segmentation Dataset](https://ieee-dataport.org/open-access/pulmonary-lobe-segmentation-covid-19-ct-scans)
 
 [VerSe'19: Large Scale Vertebrae Segmentation Challenge](https://verse2019.grand-challenge.org/)  
 
