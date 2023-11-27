@@ -4,7 +4,9 @@ This repo is the official implementation for: [PnPNet: Pull-and-Push Networks fo
 
 
 # Dataset Link
-[Pulmonary Lobe Dataset from LUNA16]
+Pulmonary Lobe Dataset from LUNA16
+
+[image](https://luna16.grand-challenge.org/)
 
 [COVID-19 CT Lung and Infection Segmentation Dataset](https://ieee-dataport.org/open-access/pulmonary-lobe-segmentation-covid-19-ct-scans)
 
