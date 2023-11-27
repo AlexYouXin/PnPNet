@@ -7,6 +7,7 @@ This repo is the official implementation for: [PnPNet: Pull-and-Push Networks fo
 Pulmonary Lobe Dataset from LUNA16:
 
 [image](https://luna16.grand-challenge.org/)
+
 [Ground truth](https://github.com/deep-voxel/automatic_pulmonary_lobe_segmentation_using_deep_learning)
 
 [COVID-19 CT Lung and Infection Segmentation Dataset](https://ieee-dataport.org/open-access/pulmonary-lobe-segmentation-covid-19-ct-scans)
