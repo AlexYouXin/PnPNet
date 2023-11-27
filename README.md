@@ -17,8 +17,13 @@ We follow the z-score normalization strategy in [nnUNet](https://github.com/MIC-
 
 # Requirements
 * python 3.7  
-* pytorch 1.8.0  
-* torchvision 0.9.0  
+* pytorch 1.8.1
+* torchvision 0.9.1 
 * simpleitk 2.0.2
 * monai 0.9.0
+* medpy 0.4.0
 
+
+# Usage
+
+# Citation
