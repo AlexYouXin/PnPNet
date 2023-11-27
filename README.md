@@ -6,7 +6,7 @@ This repo is the official implementation for: [PnPNet: Pull-and-Push Networks fo
 # Dataset Link
 Pulmonary Lobe Dataset from LUNA16:
 
-[image](https://luna16.grand-challenge.org/)
+[Image](https://luna16.grand-challenge.org/)
 
 [Ground truth](https://github.com/deep-voxel/automatic_pulmonary_lobe_segmentation_using_deep_learning)
 
