@@ -12,8 +12,8 @@ from tqdm import tqdm
 from datasets.dataset_lobe import lobe_dataset
 from utils import test_single_volume
 
-from networks.vit_seg_modeling import CONFIGS as CONFIGS_ViT_seg
-from networks.unet import network as network
+from networks.PnPNet.vit_seg_modeling import CONFIGS as CONFIGS_ViT_seg
+from networks.PnPNet import network as network
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--volume_path', type=str,

@@ -135,19 +135,19 @@ def validation(model, writer, dice_weight, ce_weight, args, epoch_num, valloader
 
 
 def run_main(args, model, snapshot_path):
-    from datasets.dataset_synapse import Synapse_dataset, RandomGenerator
+    from datasets.dataset_lobe import lobe_dataset, RandomGenerator
     logging.basicConfig(filename=snapshot_path + "/log.txt", level=logging.INFO,
                         format='[%(asctime)s.%(msecs)03d] %(message)s', datefmt='%H:%M:%S')
     logging.getLogger().addHandler(logging.StreamHandler(sys.stdout))
     logging.info(str(args))
 
     batch_size = args.batch_size * args.n_gpu
-    db_train = Synapse_dataset(base_dir=args.train_root_path, list_dir=args.list_dir, split="train", num_classes=args.num_classes,
+    db_train = lobe_dataset(base_dir=args.train_root_path, list_dir=args.list_dir, split="train", num_classes=args.num_classes,
                                transform=transforms.Compose(
                                    [RandomGenerator(output_size=args.img_size, mode = 'train')]))
 
     print("The length of train set is: {}".format(len(db_train)))
-    db_val = Synapse_dataset(base_dir=args.val_root_path, list_dir=args.list_dir, split="val", num_classes=args.num_classes,
+    db_val = lobe_dataset(base_dir=args.val_root_path, list_dir=args.list_dir, split="val", num_classes=args.num_classes,
                                transform=transforms.Compose(
                                    [RandomGenerator(output_size=args.img_size, mode = 'val')]))
     print("The length of val set is: {}".format(len(db_val)))

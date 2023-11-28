@@ -7,8 +7,8 @@ import random
 import numpy as np
 import torch
 import torch.backends.cudnn as cudnn
-from networks.vit_seg_modeling import CONFIGS as CONFIGS_ViT_seg
-from networks.unet import network as network
+from networks.PnPNet.vit_seg_modeling import CONFIGS as CONFIGS_ViT_seg
+from networks.PnPNet import network as network
 from trainer import run_main
 
 parser = argparse.ArgumentParser()
