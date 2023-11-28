@@ -1,6 +1,6 @@
 # PnPNet
 
-This repo is the official implementation for: [PnPNet: Pull-and-Push Networks for Volumetric Segmentation with Boundary Confusion](https://arxiv.org/abs/2303.17967)
+This repo is the official implementation for: [PnPNet: Pull-and-Push Networks for Volumetric Segmentation with Boundary Confusion]
 
 
 # Dataset Link
