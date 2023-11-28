@@ -25,5 +25,8 @@ We follow the z-score normalization strategy in [nnUNet](https://github.com/MIC-
 
 
 # Usage
+If you want to train the model from scratch, run the training script as following.  
+`python train.py`  
+
 
 # Citation
