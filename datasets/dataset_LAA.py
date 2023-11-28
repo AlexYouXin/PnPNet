@@ -123,7 +123,7 @@ class RandomGenerator(object):
         return sample
 
 
-class Synapse_dataset(Dataset):
+class LAA_dataset(Dataset):
     def __init__(self, base_dir, list_dir, split, num_classes, transform=None):
         self.transform = transform
         self.split = split
