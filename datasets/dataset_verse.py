@@ -51,7 +51,7 @@ class RandomGenerator(object):
         x_random = random.randint(x_middle - Delta_x, x_middle + Delta_x)
         
         thre = z_min + Delta_z + np.int(self.output_size[0] / 2)
-        if z_middle > thre:          # 此时z_middle + Delta_z < z_max
+        if z_middle > thre:
             delta_Z = z_middle - z_min - np.int(self.output_size[0] / 4)
             z_random = random.randint(z_middle - delta_Z, z_middle + delta_Z)
         else:
