@@ -12,7 +12,6 @@ from tqdm import tqdm
 from datasets.dataset_lobe import lobe_dataset
 from utils import test_single_volume
 
-from networks.PnPNet.vit_seg_modeling import CONFIGS as CONFIGS_ViT_seg
 from networks.PnPNet import network as network
 
 parser = argparse.ArgumentParser()
@@ -160,6 +159,19 @@ if __name__ == "__main__":
             'z_spacing': 1,
         },
     }
+
+
+    CONFIGS_ViT_seg = {
+        'ViT-B_16': configs.get_b16_config(),
+        'ViT-B_32': configs.get_b32_config(),
+        'ViT-L_16': configs.get_l16_config(),
+        'ViT-L_32': configs.get_l32_config(),
+        'ViT-H_14': configs.get_h14_config(),
+        'R50-ViT-B_16': configs.get_r50_b16_config(),
+        'R50-ViT-L_16': configs.get_r50_l16_config(),
+        'testing': configs.get_testing(),
+    }
+
     dataset_name = args.dataset
     args.num_classes = dataset_config[dataset_name]['num_classes']
     args.volume_path = dataset_config[dataset_name]['volume_path']
