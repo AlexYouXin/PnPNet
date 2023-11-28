@@ -4,7 +4,7 @@ This repo is the official implementation for: PnPNet: Pull-and-Push Networks for
 
 
 # Network
-![image](https://github.com/EndoluminalSurgicalVision-IMR/LA-LAA-segmentation/blob/main/network.png)
+![image](https://github.com/AlexYouXin/PnPNet/blob/main/network.png)
 
 # Dataset Link
 [Pulmonary Lobe Dataset from LUNA16: Image](https://luna16.grand-challenge.org/)[ / Ground truth](https://github.com/deep-voxel/automatic_pulmonary_lobe_segmentation_using_deep_learning)
