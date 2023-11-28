@@ -46,9 +46,9 @@ class RandomGenerator(object):
 
 
         if random.random() > 0.3:
-            Delta_z = np.int((z_max - z_min) / 3)  # 3
-            Delta_y = np.int((y_max - y_min) / 8)  # 8
-            Delta_x = np.int((x_max - x_min) / 8)  # 8
+            Delta_z = np.int((z_max - z_min) / 3)
+            Delta_y = np.int((y_max - y_min) / 8)
+            Delta_x = np.int((x_max - x_min) / 8)
         
         else:
             Delta_z = np.int((z_max - z_min) / 2) + self.output_size[0]
