@@ -17,7 +17,7 @@ from augmentation import intensity_shift, intensity_scale, random_rotate, flip_x
 
 
 
-class verse_config:
+class verse_config():
 
     object = 'vertebrae'
 
@@ -82,7 +82,7 @@ class verse_config:
 
 
 
-class lobe_config:
+class lobe_config():
 
     object = 'lung lobe'
 
@@ -146,7 +146,7 @@ class lobe_config:
 
 
 
-class LAA_config:
+class LAA_config():
 
     object = 'LA & LAA'
 
