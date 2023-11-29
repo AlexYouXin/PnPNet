@@ -12,7 +12,7 @@ from tqdm import tqdm
 from datasets.dataset_lobe import lobe_dataset
 from utils import test_single_volume
 
-from network_configs.PnPNet.unet import network as network
+from networks.PnPNet.unet import network as network
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--volume_path', type=str,
