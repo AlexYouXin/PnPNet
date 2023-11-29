@@ -7,7 +7,7 @@ import random
 import numpy as np
 import torch
 import torch.backends.cudnn as cudnn
-from networks.PnPNet.unet import network as network
+from network_configs.PnPNet.unet import network as network
 from trainer import run_main
 
 parser = argparse.ArgumentParser()
