@@ -33,8 +33,9 @@ We follow the z-score normalization strategy in [nnUNet](https://github.com/MIC-
 
 # Usage
 If you want to train the model from scratch, please follow the next steps.  
-1. fix the experimental settings according to ./config file.
-2. `python train.py`  
+1. fix dataset settings according to ./config file.
+2. confirm model settings according to ./network_configs file.
+3. `python train.py`
 
 
 # Citation
