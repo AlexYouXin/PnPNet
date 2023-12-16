@@ -8,17 +8,18 @@ import numpy as np
 import torch
 import torch.backends.cudnn as cudnn
 from networks.PnPNet.unet import network as network
+from networks.PnPNet import vit_seg_configs as configs
 from trainer import run_main
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--train_root_path', type=str,
-                    default='/dssg/home/acct-medcb/medcb-cb1/YX/medical data/verse19', help='root dir for train data')
+                    default='/lustre/home/acct-eeyj/eeyj-wr/youxin/medical_dataset/lung_lobe/luna', help='root dir for train data')
 parser.add_argument('--val_root_path', type=str,
-                    default='/dssg/home/acct-medcb/medcb-cb1/YX/medical data/verse19', help='root dir for val data')
+                    default='/lustre/home/acct-eeyj/eeyj-wr/youxin/medical_dataset/lung_lobe/luna', help='root dir for val data')
 parser.add_argument('--dataset', type=str,
                     default='lobe', help='experiment_name')    # lobe/verse/LA
 parser.add_argument('--list_dir', type=str,
-                    default='/dssg/home/acct-medcb/medcb-cb1/YX/shape_prior/SPM1/verse19/3dunet/lists/lists_Synapse', help='list dir')
+                    default='/lustre/home/acct-eeyj/eeyj-wr/youxin/uncertain_boundary/lung_lobe/clean_data/3dunet/3dunet/lists/lists_Synapse', help='list dir')
 parser.add_argument('--num_classes', type=int,
                     default=6, help='output channel of network')
 parser.add_argument('--max_iterations', type=int,
@@ -126,9 +127,12 @@ if __name__ == "__main__":
     os.environ["CUDA_VISIBLE_DEVICES"] = '0'         # '0,1,2,3'
     torch.cuda.empty_cache()
     net = network(in_channel=3, out_channel=args.num_classes, training=False, config=config_vit).cuda()
-
+    # input = torch.rand((1, 3, 128, 96, 96)).cuda()
+    # label = torch.rand((1, 128, 96, 96)).cuda()
+    # output = net(input, label)
+    # print(output)
 
     # train the network
-    transunet = {'lobe': run_main,}
-    transunet[dataset_name](args, net, snapshot_path)
+    model = {'lobe': run_main,}
+    model[dataset_name](args, net, snapshot_path)
 
