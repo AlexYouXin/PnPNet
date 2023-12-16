@@ -44,6 +44,8 @@ If you want to train the model from scratch, please follow the next steps.
 2. confirm model settings according to the networks folder.
 3. `python train.py`
 
+# Acknowledgements
+Part of codes are borrowed from other open-source github projects. Thanks for the codebase from Mask2former, nnUNet and TransUNet
 
 # Citation
 If you use our code or models in your work or find it is helpful, please cite the corresponding paper:  
