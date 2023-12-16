@@ -38,6 +38,8 @@ class verse_config():
     # data augmentation
     augmentations = ['intensity_shift', 'intensity_scale', 'random_rotate', 'flip_xz_yz']
 
+    # data split
+    split_file = '../split_list/verse19'
 
     # way of patch cropping
     # label: Ground truth
@@ -103,6 +105,8 @@ class lobe_config():
     # data augmentation
     augmentations = ['intensity_shift', 'intensity_scale', 'random_rotate']
 
+    # data split
+    split_file = '../split_list/clean_lung_lobe'
 
     # way of patch cropping
     # label: Ground truth
@@ -167,6 +171,8 @@ class LAA_config():
     # data augmentation
     augmentations = ['intensity_shift', 'intensity_scale', 'random_rotate']
 
+    # data split
+    split_file = '../split_list/LAA'
 
     # way of patch cropping
     # label: Ground truth
