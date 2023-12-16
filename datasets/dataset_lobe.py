@@ -11,7 +11,7 @@ import argparse
 from torchvision import transforms
 from torch.utils.data import DataLoader
 import SimpleITK as sitk
-from augmentation import intensity_shift, intensity_scale, random_rotate
+from . augmentation import intensity_shift, intensity_scale, random_rotate
 
 
 
