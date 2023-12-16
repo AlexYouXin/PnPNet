@@ -19,7 +19,7 @@ parser.add_argument('--val_root_path', type=str,
 parser.add_argument('--dataset', type=str,
                     default='lobe', help='experiment_name')    # lobe/verse/LA
 parser.add_argument('--list_dir', type=str,
-                    default='/lustre/home/acct-eeyj/eeyj-wr/youxin/uncertain_boundary/lung_lobe/clean_data/3dunet/3dunet/lists/lists_Synapse', help='list dir')
+                    default='../split_list/clean_lung_lobe', help='list dir')
 parser.add_argument('--num_classes', type=int,
                     default=6, help='output channel of network')
 parser.add_argument('--max_iterations', type=int,
@@ -69,7 +69,7 @@ if __name__ == "__main__":
         'lobe': {
             'train_root_path': '/lustre/home/acct-eeyj/eeyj-wr/youxin/medical_dataset/lung_lobe/luna',
             'val_root_path': '/lustre/home/acct-eeyj/eeyj-wr/youxin/medical_dataset/lung_lobe/luna',
-            'list_dir': '/lustre/home/acct-eeyj/eeyj-wr/youxin/uncertain_boundary/lung_lobe/clean_data/3dunet/3dunet/lists/lists_Synapse',
+            'list_dir': '../split_list/clean_lung_lobe',
             'num_classes': 6,
         },
     }
