@@ -79,6 +79,9 @@ class verse_config():
     train_epochs = 1000
     num_workers = 8
 
+    dice_weight = [0.25] + [0.75] * 25
+    ce_weight = [0.25] + [0.75] * 25
+
     loss = 'dice' + 'ce'
 
 
@@ -145,6 +148,10 @@ class lobe_config():
     lr = 5e-4
     train_epochs = 1500
     num_workers = 8
+
+
+    dice_weight = [0.5] + [1.1] * 5
+    ce_weight = [0.5] + [1.1] * 5
 
     loss = 'dice' + 'ce'
 
@@ -217,6 +224,9 @@ class LAA_config():
     lr = 5e-4
     train_epochs = 1500
     num_workers = 8
+
+    dice_weight = [0.3] + [1.35] + [1.35]
+    ce_weight = [0.10] + [0.45] + [0.45]
 
     loss = 'dice' + 'ce'
 
