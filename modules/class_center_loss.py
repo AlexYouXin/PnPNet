@@ -11,6 +11,13 @@ from torch.nn import CrossEntropyLoss, Dropout, Softmax, Linear, Conv2d, Conv3d,
 
 
 
+def one_hot(label, num_classes):
+    tensor_list = []
+    for i in range(num_classes):
+        temp_prob = label == i  # * torch.ones_like(input_tensor)
+        tensor_list.append(temp_prob.unsqueeze(1))
+    output_tensor = torch.cat(tensor_list, dim=1)
+    return output_tensor.float()
 
 # intra loss for centers
 class intra_loss(nn.Module):
