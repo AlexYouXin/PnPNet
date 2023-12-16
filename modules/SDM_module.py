@@ -18,7 +18,8 @@ class SDC(nn.Module):
 
         super(SDC, self).__init__() 
         self.conv = nn.Conv3d(in_channels, in_channels, kernel_size=kernel_size, stride=stride, padding=padding, dilation=dilation, groups=groups, bias=bias)
-        self.conv1 = Conv3dGN(guidance_channels, in_channels, kernel_size=3, padding=1)
+        self.conv1 = Conv3dbn(guidance_channels, in_channels, kernel_size=3, padding=1)
+        # self.conv1 = Conv3dGN(guidance_channels, in_channels, kernel_size=3, padding=1)
         self.theta = theta
         self.guidance_channels = guidance_channels
         self.in_channels = in_channels
@@ -96,4 +97,103 @@ class SDM(nn.Module):
 
         return boundary_enhanced
 
+
+
+
+
+class Conv3dReLU(nn.Sequential):
+    def __init__(
+            self,
+            in_channels,
+            out_channels,
+            kernel_size,
+            padding=0,
+            stride=1,
+            use_batchnorm=True,
+    ):
+        conv = nn.Conv3d(
+            in_channels,
+            out_channels,
+            kernel_size,
+            stride=stride,
+            padding=padding,
+            bias=not (use_batchnorm),
+        )
+        relu = nn.ReLU(inplace=True)
+
+        bn = nn.BatchNorm3d(out_channels)
+
+        super(Conv3dReLU, self).__init__(conv, bn, relu)
+
+class Conv3dbn(nn.Sequential):
+    def __init__(
+            self,
+            in_channels,
+            out_channels,
+            kernel_size,
+            padding=0,
+            stride=1,
+            use_batchnorm=True,
+    ):
+        conv = nn.Conv3d(
+            in_channels,
+            out_channels,
+            kernel_size,
+            stride=stride,
+            padding=padding,
+            bias=not (use_batchnorm),
+        )
+
+        bn = nn.BatchNorm3d(out_channels)
+
+        super(Conv3dbn, self).__init__(conv, bn)
+
+
+
+class Conv3dGNReLU(nn.Sequential):
+    def __init__(
+            self,
+            in_channels,
+            out_channels,
+            kernel_size,
+            padding=0,
+            stride=1,
+            use_batchnorm=True,
+    ):
+        conv = nn.Conv3d(
+            in_channels,
+            out_channels,
+            kernel_size,
+            stride=stride,
+            padding=padding,
+            bias=not (use_batchnorm),
+        )
+        gelu = nn.GELU()
+
+        gn = nn.GroupNorm(4, out_channels)
+
+        super(Conv3dGNReLU, self).__init__(conv, gn, gelu)
+
+class Conv3dGN(nn.Sequential):
+    def __init__(
+            self,
+            in_channels,
+            out_channels,
+            kernel_size,
+            padding=0,
+            stride=1,
+            use_batchnorm=True,
+    ):
+        conv = nn.Conv3d(
+            in_channels,
+            out_channels,
+            kernel_size,
+            stride=stride,
+            padding=padding,
+            bias=not (use_batchnorm),
+        )
+
+        gn = nn.GroupNorm(4, out_channels)
+
+        super(Conv3dGN, self).__init__(conv, gn)
 
