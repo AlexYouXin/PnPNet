@@ -46,3 +46,12 @@ If you want to train the model from scratch, please follow the next steps.
 
 
 # Citation
+If you use our code or models in your work or find it is helpful, please cite the corresponding paper:  
+```
+@article{you2023pnpnet,
+  title={PnPNet: Pull-and-Push Networks for Volumetric Segmentation with Boundary Confusion},
+  author={You, Xin and Ding, Ming and Zhang, Minghui and Zhang, Hanxiao and Yu, Yi and Yang, Jie and Gu, Yun},
+  journal={arXiv preprint arXiv:2312.08323},
+  year={2023}
+}
+```
