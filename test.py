@@ -11,20 +11,20 @@ from torch.utils.data import DataLoader
 from tqdm import tqdm
 from datasets.dataset_lobe import lobe_dataset
 from utils import test_single_volume
-
+from networks.PnPNet import vit_seg_configs as configs
 from networks.PnPNet.unet import network as network
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--volume_path', type=str,
-                    default='/dssg/home/acct-medcb/medcb-cb1/YX/medical data/verse19', help='root dir for validation volume data')  # for acdc volume_path=root_dir
+                    default='/lustre/home/acct-eeyj/eeyj-wr/youxin/medical_dataset/lung_lobe/luna', help='root dir for validation volume data')  # for acdc volume_path=root_dir
 parser.add_argument('--edge_path', type=str,
-                    default='/dssg/home/acct-medcb/medcb-cb1/YX/medical data/verse19', help='edge dir for train and val data')
+                    default='/lustre/home/acct-eeyj/eeyj-wr/youxin/medical_dataset/lung_lobe/luna', help='edge dir for train and val data')
 parser.add_argument('--dataset', type=str,
                     default='Synapse', help='experiment_name')
 parser.add_argument('--num_classes', type=int,
                     default=6, help='output channel of network')
 parser.add_argument('--list_dir', type=str,
-                    default='/dssg/home/acct-medcb/medcb-cb1/YX/shape_prior/SPM1/verse19/3dunet/lists/lists_Synapse', help='list dir')
+                    default='/lustre/home/acct-eeyj/eeyj-wr/youxin/uncertain_boundary/lung_lobe/clean_data/3dunet/3dunet/lists/lists_Synapse', help='list dir')
 parser.add_argument('--max_iterations', type=int,default=15000, help='maximum epoch number to train')
 parser.add_argument('--max_epochs', type=int, default=1500, help='maximum epoch number to train')
 parser.add_argument('--batch_size', type=int, default=1,                     # 24
