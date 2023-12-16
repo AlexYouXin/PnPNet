@@ -45,7 +45,7 @@ If you want to train the model from scratch, please follow the next steps.
 3. `python train.py`
 
 # Acknowledgements
-Part of codes are borrowed from other open-source github projects. Thanks for the codes from [MedNeXt](https://github.com/MIC-DKFZ/MedNeXt), [nnUNet](https://github.com/MIC-DKFZ/nnUNet) and [TransUNet](https://github.com/Beckschen/TransUNet).
+Part of codes are borrowed from other open-source github projects. Thanks for the codes from [MedNeXt](https://github.com/MIC-DKFZ/MedNeXt), [nnUNet](https://github.com/MIC-DKFZ/nnUNet), [Swin UNETR](https://github.com/Project-MONAI/research-contributions) and [TransUNet](https://github.com/Beckschen/TransUNet).
 
 # Citation
 If you use our code or models in your work or find it is helpful, please cite the corresponding paper:  
