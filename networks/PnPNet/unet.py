@@ -9,9 +9,16 @@ import torch.nn.functional as F
 from . resnet_skip import ResNetV2
 import numpy as np
 from torch.nn import CrossEntropyLoss, Dropout, Softmax, Linear, Conv2d, Conv3d, LayerNorm
-from . modules.SDM_module import SDM
-from . modules.CCM_module import CCM
-from . modules.class_center_loss import intra_loss
+import sys
+sys.path.append('xxxx/PnPNet/networks/modules')           # absolute path for modules folder
+print(sys.path)
+# from . modules.SDM_module import SDM
+# from . modules.CCM_module import CCM
+# from . modules.class_center_loss import intra_loss
+from SDM_module import SDM
+from CCM_module import CCM
+from class_center_loss import intra_loss
+
 
 def swish(x):
     return x * torch.sigmoid(x)
