@@ -6,7 +6,6 @@ This repo is the official implementation for: PnPNet: Pull-and-Push Networks for
 ![image](https://github.com/AlexYouXin/PnPNet/blob/main/uncertain_type.png)
 
 # Boundary refinement
-<figure class="third">
 <img src="https://github.com/AlexYouXin/PnPNet/blob/main/clean_lobe1.gif" width="230"/><img src="https://github.com/AlexYouXin/PnPNet/blob/main/fused_lobe1.gif" width="230"/><img src="https://github.com/AlexYouXin/PnPNet/blob/main/verse1.gif" width="230"/>
 
 
