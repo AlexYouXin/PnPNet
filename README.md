@@ -3,11 +3,11 @@
 This repo is the official implementation for: PnPNet: Pull-and-Push Networks for Volumetric Segmentation with Boundary Confusion
 
 # Boundary confusion
-![image](https://github.com/AlexYouXin/PnPNet/blob/main/uncertain_type.png)
+![image](https://github.com/AlexYouXin/PnPNet/blob/main/figs/uncertain_type.png)
 
 # Boundary refinement
 
-<img src="https://github.com/AlexYouXin/PnPNet/blob/main/clean_lobe1.gif" width="330"><img src="https://github.com/AlexYouXin/PnPNet/blob/main/fused_lobe1.gif" width="330"><img src="https://github.com/AlexYouXin/PnPNet/blob/main/verse1.gif" width="330">
+<img src="https://github.com/AlexYouXin/PnPNet/blob/main/figs/clean_lobe1.gif" width="330"><img src="https://github.com/AlexYouXin/PnPNet/blob/main/figs/fused_lobe1.gif" width="330"><img src="https://github.com/AlexYouXin/PnPNet/blob/main/figs/verse1.gif" width="330">
 
 
 # Abstract
@@ -15,11 +15,11 @@ Precise boundary segmentation of volumetric images is a critical task for image-
 
 
 # Pull-Push mechanism
-![image](https://github.com/AlexYouXin/PnPNet/blob/main/pull-push.png)
+![image](https://github.com/AlexYouXin/PnPNet/blob/main/figs/main/pull-push.png)
 
 
 # Network
-![image](https://github.com/AlexYouXin/PnPNet/blob/main/network.png)
+![image](https://github.com/AlexYouXin/PnPNet/blob/main/figs/network.png)
 
 
 # Dataset Link
