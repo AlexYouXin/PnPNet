@@ -15,7 +15,7 @@ Precise boundary segmentation of volumetric images is a critical task for image-
 
 
 # Pull-Push mechanism
-![image](https://github.com/AlexYouXin/PnPNet/blob/main/figs/main/pull-push.png)
+![image](https://github.com/AlexYouXin/PnPNet/blob/main/figs/pull-push.png)
 
 
 # Network
