@@ -7,7 +7,7 @@ This repo is the official implementation for: PnPNet: Pull-and-Push Networks for
 
 # Boundary refinement
 
-<img src="https://github.com/AlexYouXin/PnPNet/blob/main/figs/clean_lobe1.gif" width="270"><img src="https://github.com/AlexYouXin/PnPNet/blob/main/figs/fused_lobe1.gif" width="270"><img src="https://github.com/AlexYouXin/PnPNet/blob/main/figs/verse1.gif" width="270">
+<img src="https://github.com/AlexYouXin/PnPNet/blob/main/figs/clean_lobe1.gif" width="270"> &emsp;&emsp; <img src="https://github.com/AlexYouXin/PnPNet/blob/main/figs/fused_lobe1.gif" width="270"><img src="https://github.com/AlexYouXin/PnPNet/blob/main/figs/verse1.gif" width="270">
 
 <img src="https://github.com/AlexYouXin/PnPNet/blob/main/figs/clean_lobe2.gif" width="270"><img src="https://github.com/AlexYouXin/PnPNet/blob/main/figs/fused_lobe2.gif" width="270"><img src="https://github.com/AlexYouXin/PnPNet/blob/main/figs/verse2.gif" width="270">
 
